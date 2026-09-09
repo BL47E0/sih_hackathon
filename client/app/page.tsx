@@ -1,8 +1,10 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Home() {
+    const router = useRouter();
   const [industry, setIndustry] = useState("");
   const [businessType, setBusinessType] = useState("");
   const [location, setLocation] = useState("");
@@ -224,9 +226,10 @@ export default function Home() {
                 </div>
 
                 <button
-                  className="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-500"
+                    onClick={() => router.push("/dashboard")}
+                    className="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-500"
                 >
-                  Analyze Project →
+                    Analyze Project →
                 </button>
 
               </div>

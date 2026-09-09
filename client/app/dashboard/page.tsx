@@ -169,9 +169,12 @@ export default function Dashboard() {
             </div>
 
             <div className="border-t border-slate-800 px-6 py-4">
-              <button className="text-sm font-medium text-cyan-400 transition hover:text-cyan-300">
-                View full approval roadmap →
-              </button>
+                <Link
+                    href="/dashboard/roadmap"
+                    className="text-sm font-medium text-cyan-400 transition hover:text-cyan-300"
+                >
+                    View full approval roadmap →
+                </Link>
             </div>
           </div>
 
