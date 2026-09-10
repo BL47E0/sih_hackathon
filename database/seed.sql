@@ -3,19 +3,22 @@ INSERT INTO projects (
     id,
     name,
     industry,
+    business_type,
     location,
     investment_amount,
-    project_stage
+    project_stage,
+    capacity
 )
 VALUES (
     'd7b244af-6264-41dd-80b6-79e0528159b7',
     'Maharashtra Food Processing Unit',
     'food_processing',
+    'msme',
     'Maharashtra',
     150000000,
-    'pre_establishment'
+    'pre_establishment',
+    '50000 units/year'
 );
-
 
 -- Approvals
 INSERT INTO approvals (
